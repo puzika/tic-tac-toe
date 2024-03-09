@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script defer src="/socket.io/socket.io.js"></script>
+   <script defer src="./index.js"></script>
+   <title>Tic-Tac-Toe</title>
+</head>
+<body>
+   <h1 class="header">Tic-Tac-Toe</h1>
+
+   <form action="" class="init">
+      <label for="init__link" class="init__label">Join room and invite a friend</label>
+      <input id="init__link" type="text" class="init__link">
+      <button class="init__start">Start</button>
+   </form>
+
+   <main class="game game--hidden">
+      <div class="grid">
+         <div class="grid__overlay grid__overlay--hidden"></div>
+      </div>
+
+      <div class="chat">
+         <div class="chat__messages"></div>
+
+         <form action="" class="chat__form">
+            <input type="text" class="chat__input">
+            <button class="chat__send-btn">Send</button>
+         </form>
+      </div>
+   </main>
+</body>
+</html>

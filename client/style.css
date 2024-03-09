@@ -1,0 +1,131 @@
+:root {
+  --grid-size: 35rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.header {
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 4rem 0 5rem;
+}
+
+.init {
+  margin: 2rem auto;
+  max-width: 35rem;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border: 0.1rem solid black;
+}
+.init > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.init__label {
+  font-size: 2rem;
+}
+.init__link {
+  width: 100%;
+}
+.init__start {
+  width: 50%;
+}
+.init--hidden {
+  display: none;
+}
+
+.game {
+  position: relative;
+  margin: 0 auto;
+  width: var(--grid-size);
+  height: var(--grid-size);
+}
+.game--hidden {
+  display: none;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  border: 0.1rem solid black;
+}
+.grid__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  border: inherit;
+  cursor: pointer;
+}
+.grid__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.grid__overlay--hidden {
+  display: none;
+}
+.grid__overlay--final {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.chat {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(2rem);
+}
+.chat__messages {
+  flex: 1;
+  border: 0.1rem solid black;
+  margin-bottom: 1rem;
+  overflow-y: scroll;
+}
+.chat__form {
+  display: flex;
+}
+.chat__input {
+  margin-right: 1rem;
+  outline: none;
+}
+.chat__send-btn {
+  outline: none;
+  cursor: pointer;
+}
+
+.message {
+  border-bottom: 0.1rem solid black;
+}
+.message__content {
+  line-height: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "tic-tac-toe",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "sass main.scss style.css -w"
+  },
+  "author": "Tolibjon Latipov",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.1"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.7.4"
+  }
+}
